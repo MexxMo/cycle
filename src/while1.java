@@ -43,6 +43,46 @@ public class while1 {
 
         System.out.println("Задача 4");
 
+        double summa = 15000;
+        double percent = 0.07;
+        int month = 0;
+        while (summa < 12_000_000) {
+            month++;
+            summa = summa + (summa * percent);
+            System.out.println("Месяц " + month + " сумма вклада " + summa);
+        }
+
+        System.out.println("Задача 5");
+
+
+        summa = 15000;
+
+        month = 0;
+        while (summa < 12_000_000) {
+            month++;
+            summa = summa + (summa * percent);
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " Итого " + summa);
+            }
+        }
+
+        System.out.println("Задача 6");
+        summa = 15000;
+        month = 0;
+        age=9;
+        int accumulationPeriod = age*12;
+        while (month < accumulationPeriod) {
+            summa = summa + (summa * percent);
+            month++;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " Итого " + summa);
+            }
+
+        }
+        System.out.println("Задача 7");
+
+        int date= 5;
+
 
 
     }
