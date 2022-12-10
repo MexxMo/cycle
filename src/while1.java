@@ -69,8 +69,8 @@ public class while1 {
         System.out.println("Задача 6");
         summa = 15000;
         month = 0;
-        age=9;
-        int accumulationPeriod = age*12;
+        age = 9;
+        int accumulationPeriod = age * 12;
         while (month < accumulationPeriod) {
             summa = summa + (summa * percent);
             month++;
@@ -81,8 +81,26 @@ public class while1 {
         }
         System.out.println("Задача 7");
 
-        int date= 5;
+        int friday = 5;
+        int dayWeek = 1;
+        System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+        while ( dayWeek < 31 ) {
+            friday = friday + 7;
+            dayWeek++;
+            if (dayWeek < 31 && friday <= 31) {
+                System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
 
+            }
+        }
+
+        System.out.println("Задача 8");
+        int year = 2022;
+        age = 0;
+        for (; age < 2500; age = age + 79) {
+            if (age > year - 200 && age < year + 100) {
+                System.out.println(age);
+            }
+        }
 
 
     }
