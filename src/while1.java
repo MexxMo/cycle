@@ -81,14 +81,13 @@ public class while1 {
         }
         System.out.println("Задача 7");
 
-        int friday = 5;
+        int friday = 7;
         int dayWeek = 1;
-        System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         while ( dayWeek < 31 ) {
-            friday = friday + 7;
             dayWeek++;
-            if (dayWeek < 31 && friday <= 31) {
-                System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+
+            if (dayWeek%friday==0) {
+                System.out.println("Сегодня пятница, " + dayWeek + "-е число. Необходимо подготовить отчет");
 
             }
         }
