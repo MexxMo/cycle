@@ -1,15 +1,16 @@
-public class while1 {
+public class While1 {
     public static void main(String[] args) {
         System.out.println("Задача 1");
 
         int accumulation = 15000;
         int deposit = 0;
-        int i = 0;
-        while (deposit < 2459000) {
+        int month = 0;
+        int dream=2459000;
+        while (deposit < dream) {
             deposit = deposit + deposit / 100;
             deposit = deposit + accumulation;
-            i++;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+            month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
         }
 
 
@@ -34,7 +35,7 @@ public class while1 {
         int age = 0;
         int death = 8;
         int fertility = 17;
-        int birthRate = (fertility - death) * 12000;
+        int birthRate = (fertility - death) * cityPeople / 1000;
         while (age < 10) {
             age++;
             cityPeople = cityPeople + birthRate;
@@ -43,10 +44,11 @@ public class while1 {
 
         System.out.println("Задача 4");
 
-        double summa = 15000;
-        double percent = 0.07;
-        int month = 0;
-        while (summa < 12_000_000) {
+        float summa = 15000;
+        float percent = 0.07f;
+        month = 0;
+        int mechta = 12000000;
+        while (summa < mechta) {
             month++;
             summa = summa + (summa * percent);
             System.out.println("Месяц " + month + " сумма вклада " + summa);
@@ -58,7 +60,7 @@ public class while1 {
         summa = 15000;
 
         month = 0;
-        while (summa < 12_000_000) {
+        while (summa < mechta) {
             month++;
             summa = summa + (summa * percent);
             if (month % 6 == 0) {
@@ -82,21 +84,18 @@ public class while1 {
         System.out.println("Задача 7");
 
         int friday = 7;
-        int dayWeek = 1;
-        while (dayWeek < 31) {
-            dayWeek++;
-
-            if (dayWeek % friday == 0) {
-                System.out.println("Сегодня пятница, " + dayWeek + "-е число. Необходимо подготовить отчет");
-
-            }
+        int dayWeek = friday;
+        for (; dayWeek <= 31; dayWeek = dayWeek + 7) {
+            System.out.println("Сегодня пятница, " + dayWeek + "-е число. Необходимо подготовить отчет");
         }
 
         System.out.println("Задача 8");
         int year = 2022;
         age = 0;
-        for (; age < 2500; age = age + 79) {
-            if (age > year - 200 && age < year + 100) {
+        int ageFuture = year + 100;
+        int agePast = year - 200;
+        for (; age < 2122; age = age + 79) {
+            if (age > agePast && age < ageFuture) {
                 System.out.println(age);
             }
         }
