@@ -83,10 +83,10 @@ public class while1 {
 
         int friday = 7;
         int dayWeek = 1;
-        while ( dayWeek < 31 ) {
+        while (dayWeek < 31) {
             dayWeek++;
 
-            if (dayWeek%friday==0) {
+            if (dayWeek % friday == 0) {
                 System.out.println("Сегодня пятница, " + dayWeek + "-е число. Необходимо подготовить отчет");
 
             }
